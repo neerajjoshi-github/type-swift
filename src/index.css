@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900;1000&family=PT+Mono&family=Salsa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Nunito", sans-serif;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1010%26quot%3b)' fill='none'%3e%3cpath d='M1984 1080L0 1080 L0 703.93Q37.92 645.85%2c 96 683.77Q97.13 588.9%2c 192 590.03Q215.58 517.61%2c 288 541.18Q351.25 508.43%2c 384 571.68Q484.96 576.63%2c 480 677.59Q571.95 609.54%2c 640 701.48Q653.78 619.26%2c 736 633.04Q758.75 559.79%2c 832 582.55Q928.82 519.37%2c 992 616.19Q1050.71 578.9%2c 1088 637.61Q1167.59 621.2%2c 1184 700.8Q1219 575.8%2c 1344 610.8Q1403.99 574.79%2c 1440 634.78Q1526.8 625.58%2c 1536 712.38Q1609.36 625.74%2c 1696 699.09Q1719.49 626.59%2c 1792 650.08Q1786.58 548.65%2c 1888 543.23Q2014.83 574.06%2c 1984 700.88z' fill='rgba(24%2c 47%2c 93%2c 0.83)'%3e%3c/path%3e%3cpath d='M1984 1080L0 1080 L0 814.92Q12.42 667.34%2c 160 679.75Q213.66 637.41%2c 256 691.08Q355.63 694.71%2c 352 794.34Q420.99 767.33%2c 448 836.31Q499.14 727.45%2c 608 778.6Q666.85 741.45%2c 704 800.31Q716.39 716.7%2c 800 729.09Q895.43 664.52%2c 960 759.95Q1052.13 756.09%2c 1056 848.22Q1114.75 746.97%2c 1216 805.72Q1301.28 731%2c 1376 816.27Q1434.83 779.1%2c 1472 837.93Q1527.14 797.07%2c 1568 852.21Q1568.89 693.11%2c 1728 694Q1766.75 636.75%2c 1824 675.5Q1964.01 655.51%2c 1984 795.53z' fill='rgba(37%2c 70%2c 125%2c 0.71)'%3e%3c/path%3e%3cpath d='M2080 1080L0 1080 L0 947.77Q100.17 887.94%2c 160 988.11Q197.99 930.1%2c 256 968.08Q293.77 845.85%2c 416 883.62Q440.13 811.75%2c 512 835.89Q602.91 766.8%2c 672 857.71Q774.96 800.67%2c 832 903.64Q888.36 864%2c 928 920.35Q955.56 787.91%2c 1088 815.48Q1177.95 745.43%2c 1248 835.38Q1356.87 784.25%2c 1408 893.12Q1527.9 853.02%2c 1568 972.93Q1606.83 915.75%2c 1664 954.58Q1657.68 852.27%2c 1760 845.95Q1822.82 748.77%2c 1920 811.58Q2023.79 755.37%2c 2080 859.16z' fill='rgba(53%2c 108%2c 177%2c 1)'%3e%3c/path%3e%3cpath d='M2048 1080L0 1080 L0 970.45Q82.35 956.8%2c 96 1039.14Q203.06 986.2%2c 256 1093.26Q319.98 997.24%2c 416 1061.22Q492.59 1041.81%2c 512 1118.39Q575.13 1021.52%2c 672 1084.65Q690.95 943.6%2c 832 962.55Q924.32 894.87%2c 992 987.19Q1126.26 961.45%2c 1152 1095.7Q1208.58 1056.28%2c 1248 1112.86Q1253.03 1021.89%2c 1344 1026.92Q1397.91 984.83%2c 1440 1038.74Q1496.08 998.82%2c 1536 1054.89Q1594.41 1017.31%2c 1632 1075.72Q1738.46 1022.18%2c 1792 1128.64Q1807.81 1048.45%2c 1888 1064.27Q1934.57 950.84%2c 2048 997.4z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1010'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-position: bottom;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.gradient-text {
+  background-image: radial-gradient(
+    circle,
+    #ff512f,
+    #fd6626,
+    #f9781e,
+    #f58919,
+    #f09819
+  );
+  background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: text-gradient-animation 5s linear infinite;
+}
+
+@keyframes text-gradient-animation {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.animate-border {
+  animation: border-animation 2s ease-in-out infinite;
+}
+
+.error-text {
+  animation: error 0.2s linear;
+}
+
+@keyframes border-animation {
+  0%,
+  100% {
+    border-color: rgb(59 130 246);
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes error {
+  0%,
+  100% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(6px);
+  }
+
+  75% {
+    transform: translateX(-6px);
+  }
+}
+
+.dialog-open {
+  animation: dialog-animation 0.5s;
+}
+
+@keyframes dialog-animation {
+  0% {
+    opacity: 0.8;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

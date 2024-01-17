@@ -1,0 +1,15 @@
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="39" height="340">
+  <defs>
+    <filter id="black" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#000000" flood-opacity=".2"/>
+    </filter>
+    <filter id="blue" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#1A608E" flood-opacity=".2"/>
+    </filter>
+  </defs>  
+
+  <!-- <path d="M29 40s-20.2-.3-26-5.3C22.4 34.7 29 0 29 0v40z" fill="#4A4A4A" filter="url(#black)" transform="translate(10,20)"/> -->
+  <path d="M29 40s-20.2-.3-26-5.3C22.4 34.7 29 0 29 0v40z" fill="#FFFFFF" filter="url(#black)" transform="translate(10,100)"/>
+  <!-- <path d="M29 40s-20.2-.3-26-5.3C22.4 34.7 29 0 29 0v40z" fill="#FFFFFF" filter="url(#blue)" transform="translate(10,180)"/> -->
+  <!-- <path d="M29 40s-20.2-.3-26-5.3C22.4 34.7 29 0 29 0v40z" fill="#D43652" filter="url(#black)" transform="translate(10,260)"/> -->
+</svg>
